@@ -20,6 +20,8 @@ function selectVillain() {
             addMessage(data.error, "bot-message");
         } else {
             addMessage(data.message, "bot-message");
+            // Call addImage to display the villain's image
+            addImage(data.image);
             document.getElementById("user-input").disabled = false;
             document.querySelector(".chat-input button").disabled = false;
         }
@@ -57,6 +59,23 @@ function sendMessage() {
     });
 
     userInput.value = "";
+}
+
+function addImage(imageUrl) {
+    const chatBox = document.getElementById("chat-box");
+
+    const imageDiv = document.createElement("div");
+    imageDiv.classList.add("message", "bot-message"); // Add class for styling
+
+    const imageElement = document.createElement("img");
+    imageElement.src = imageUrl;
+    imageElement.alt = "Villain Image";
+    imageElement.classList.add("villain-image"); // Add class for styling if needed
+
+    imageDiv.appendChild(imageElement);
+    chatBox.appendChild(imageDiv);
+    
+    chatBox.scrollTop = chatBox.scrollHeight; // Scroll to the bottom of the chat
 }
 
 function addMessage(text, className) {

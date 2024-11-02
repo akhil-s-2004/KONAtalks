@@ -90,3 +90,10 @@ body {
 .chat-input button:hover {
     background-color: #5a2482;
 }
+
+.villain-image {
+    width: 50px; /* Set desired width */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 10px auto; /* Center the image */
+}

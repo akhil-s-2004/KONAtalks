@@ -150,6 +150,16 @@ villain_prompts = {
     ]
     # Add more villains here if needed
 }
+villain_image = {
+    "joker": "/static/joker_image.jpg",
+    "thanos": "/static/hanos_image.jpg",
+    "loki": "/static/loki1_image.jpg",
+    "digambaran": "/static/dibu_image.jpg",
+    "mangalaseril_neelakandan": "/static/mangalasseril_neelakandan.jpg",
+    "stephen_nedumpalli": "/static/stephen_nepumplli_image.jpg",
+    "kodumal_potty": "/static/kodumal_potty_image.jpg"
+}
+
 
 # Track conversation state
 @app.route('/')
@@ -168,7 +178,8 @@ def select_villain():
     
     # Initialize conversation state for selected villain
     session['villain'] = villain
-    return jsonify({"message": f"You are now chatting with {villain.capitalize()}!"})
+    villain_images = villain_image.get(villain, "")
+    return jsonify({"message": f"You are now chatting with {villain.capitalize()}!", "image": villain_images})
 
 @app.route('/konatalks/chat', methods=['POST'])
 def chat():

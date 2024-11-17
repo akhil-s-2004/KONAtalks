@@ -1,9 +1,9 @@
 # Kona Talks
 
-##Host Link
+## Host Link
 https://konatalks.onrender.com/
 
-##Sample Video
+## Sample Video
 https://drive.google.com/drive/folders/1mfiD0UvGxKqphhme7cpyXfYi9Q4ZMXM7
 
 ## Project Description

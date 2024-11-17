@@ -1,10 +1,10 @@
 # Kona Talks
 
-## Host Link
-https://konatalks.onrender.com/
+## Hosted Link
+Access the live site here: <a href="https://konatalks.onrender.com/">Kona Talks</a>
 
-## Sample Video
-https://drive.google.com/drive/folders/1mfiD0UvGxKqphhme7cpyXfYi9Q4ZMXM7
+## Sample Working Video
+Watch the platform in action: <a href="https://drive.google.com/drive/folders/1mfiD0UvGxKqphhme7cpyXfYi9Q4ZMXM7">Kona Talks Video</a>
 
 ## Project Description
 Kona Talks is a fun, interactive chat platform that allows users to engage in lively conversations with fictional supervillains. These villains entertain users with witty responses and humorous jokes, creating a unique and playful chatting experience.
